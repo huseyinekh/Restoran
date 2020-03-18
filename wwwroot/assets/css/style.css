@@ -1,0 +1,133 @@
+
+button ,input,h5{
+    font-family: 'Trade Winds', cursive;
+   
+}
+span,input,p{
+  font-family: 'Source Sans Pro', sans-serif;  
+}
+
+.top_index{
+    z-index: 100;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 10;
+}
+
+   .badge-danger {
+    color: #fff;
+    background-color: #e50016 !important;
+}
+
+body {
+    overflow-y: scroll;
+}
+.events-container .btn{
+ min-width: 80px !important;
+}
+.nofitication_badge{
+    cursor: pointer;
+}
+.customer_span{
+    visibility: hidden;
+}
+.small_image{
+ width : 200px;
+ height: 200px;
+}
+button{
+    transition: all 0.25s ease;
+    display: flex;
+    
+}
+.my-shadow{
+ 
+}
+.item{
+    box-shadow:3px 3px 10px 2px #9298df99 ;
+    transition: all 0.3s ease;
+    
+}
+.item:hover{
+    box-shadow:8px 10px 20px 4px #9298df99 
+}
+ 
+.sound-container{
+
+}
+.message-span{
+    position: absolute;
+}
+.scroll-container{
+
+}
+/* message start */
+.sendMessageContainer{
+    width:100%;
+}
+.msg_input{
+    width: 100% !important;
+}
+
+.message_cotainer{
+
+}
+.messages{
+    height: 150px !important;
+    overflow-y: scroll;
+}
+.customer_msg{
+    float: left;
+    word-break: break-all
+}
+.garson_msg{
+    float: right;
+    word-break: break-all;
+    opacity: 0.8;
+}
+
+/* ANIMATION */
+@keyframes opacity {
+    0% {
+     opacity: 0;
+    }
+    100% {
+     opacity: 1;
+    }
+  }
+  @keyframes margin {
+    0% {
+     margin: 0 50px ;
+    }
+    100% {
+    margin: 0 0;
+    }
+  }
+
+  .item {  
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: 1s ease-out 0s 1 opacity;
+    
+  }
+
+  header {  
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: 1s ease-out 0s 1 opacity;
+    
+  }
+
+
+
+
+
+footer {
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: 1s ease-out 0s 1 opacity;
+}
+  
+  

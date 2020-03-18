@@ -1,0 +1,30 @@
+﻿@model IEnumerable<AboutResturant>
+
+@foreach (var item in Model)
+{
+    <div class="container align-items-start justify-content-center d-flex mt-5 pt-5 mb-5">
+
+        <div style="width: 45rem;" class="card mb-3">
+
+            <div class="card bg-dark text-white">
+                <div class="overlay"></div>
+                <img style="height:26rem" src="@item.Image" class="card-img-top" alt="...">
+                <div class=" top_index card-img-overlay">
+                    <h5 class="card-title">@item.Title</h5>
+                    <p class="card-text"></p>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"> @item.Description</p>
+                <p class="card-text">@item.About<small class="text-muted"></small></p>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+

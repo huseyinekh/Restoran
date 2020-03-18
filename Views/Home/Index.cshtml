@@ -1,0 +1,19 @@
+﻿
+@model TablePassword
+
+
+<link rel="stylesheet" href="~/assets/css/register.css" />
+
+
+    <div class="container my-5 p-5  justify-content-center d-flex">
+        <div class="form_inner">
+            <form method="post" >
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Kodu gir</label>
+                    <input asp-for="Password" type="password" class="form-control" id="exampleInputPassword1">
+                    <input asp-for="TableNum" type="hidden" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Giriş</button>
+            </form>
+        </div>
+    </div>

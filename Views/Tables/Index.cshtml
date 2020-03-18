@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Restoran.Models.Table>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/RestoranAdmin/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Index</h1>
+
+
+<p>
+    <a class="btn btn-success" asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TableName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TableNumber)
+            </th>
+            <th>
+                Koltuk Sayı
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageLink)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TableName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TableNumber)
+            </td>
+            <td>
+               <img  style="width:200px;height:200px" class="img-thumbnail" src="~/assets/image/@Html.DisplayFor(modelItem => item.ImageLink)" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageLink)
+            </td>
+            <td>
+                <a class="btn btn-warning"asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a class="btn btn-info"asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Sil</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
